@@ -282,9 +282,16 @@ products.map(item => {
 
 
 const filteredItem = (btn) =>{
+    div.innerHTML = ''
     console.log(btn.innerHTML);
     const filter = products.filter(item => {
         return item.category === btn.innerHTML
+    }).map(item => {
+        div.innerHTML += `   <h3 class = 'mt-4 '>
+    product name : ${item.brand} ${item.name}</h3>
+    <h3 > price : ${item.price}</h3>
+    <h3> category : ${item.category}</h3>
+    <hr/> `
     })
     console.log(filter);
 }
