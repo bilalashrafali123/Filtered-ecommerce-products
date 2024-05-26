@@ -223,3 +223,16 @@ const products = [
         brand: "Bosch"
     }
 ];
+
+
+
+
+
+// console.log(products);
+
+
+const electronics = products.filter(item => {
+    // console.log(item.category);
+    return item.category === 'Electronics'
+})
+console.log(electronics);
