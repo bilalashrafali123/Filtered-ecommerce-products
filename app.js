@@ -231,10 +231,41 @@ const products = [
 // console.log(products);
 
 
-const electronics = products.filter(item => {
-    // console.log(item.category);
-    return item.category === 'Electronics'
-}).filter((item) =>{
-  return item.price < 200
-})
+// const electronics = products.filter(item => {
+//     // console.log(item.category);
+//     return item.category === 'Electronics'
+// }).filter((item) =>{
+//   return item.price < 200
+// })
+// console.log(electronics);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const electronics = products.filter(item => item.category === 'Electronics' ).filter(item => item.price > 100).filter(item => item.price < 200 )
+
+
 console.log(electronics);
+
+
+
+
+
