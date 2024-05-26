@@ -267,6 +267,19 @@ const products = [
 
 
 
+ const div =document.querySelector('.div-1')
+products.map(item => {
+    // console.log(item.category);
+    div.innerHTML += `   <h3 class = 'mt-4 '>
+    product name : ${item.brand} ${item.name}</h3>
+    <h3 > price : ${item.price}</h3>
+    <h3> category : ${item.category}</h3>
+    <hr/> `
+
+})
+
+
+
 
 
 
