@@ -234,5 +234,7 @@ const products = [
 const electronics = products.filter(item => {
     // console.log(item.category);
     return item.category === 'Electronics'
+}).filter((item) =>{
+  return item.price < 200
 })
 console.log(electronics);
