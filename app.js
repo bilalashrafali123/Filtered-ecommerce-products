@@ -268,6 +268,9 @@ const products = [
 
 
  const div =document.querySelector('.div-1')
+
+ 
+  
 products.map(item => {
     // console.log(item.category);
     div.innerHTML += `   <h3 class = 'mt-4   '>
@@ -278,7 +281,7 @@ products.map(item => {
 
 })
 
-
+ 
 
 
 const filteredItem = (btn) =>{
@@ -293,7 +296,9 @@ const filteredItem = (btn) =>{
     <h3> category : ${item.category}</h3>
     <hr/> `
     })
-    console.log(filter);
 }
+console.log(filter);  
+
+
 
 
