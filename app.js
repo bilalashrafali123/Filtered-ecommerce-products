@@ -281,5 +281,12 @@ products.map(item => {
 
 
 
+const filteredItem = (btn) =>{
+    console.log(btn.innerHTML);
+    const filter = products.filter(item => {
+        return item.category === btn.innerHTML
+    })
+    console.log(filter);
+}
 
 
